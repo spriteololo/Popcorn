@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_main_info_switcher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:measureAllChildren="false">
+
+    <com.epam.popcornapp.ui.skeleton.SkeletonMainInfoBigTitle
+        android:id="@+id/adapter_main_info_skeleton_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.epam.popcornapp.ui.informationViews.MainInfoView
+        android:id="@+id/adapter_main_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</ViewSwitcher>

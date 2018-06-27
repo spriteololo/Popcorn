@@ -1,0 +1,242 @@
+package com.epam.popcornapp.pojo.search;
+
+import com.epam.popcornapp.pojo.actors.search.embedded.KnownFor;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
+
+public class MultiSearchResult {
+
+    @SerializedName("vote_average")
+    @Expose
+    private float voteAverage;
+    @SerializedName("vote_count")
+    @Expose
+    private int voteCount;
+    @SerializedName("id")
+    @Expose
+    private int id;
+    @SerializedName("video")
+    @Expose
+    private boolean video;
+    @SerializedName("media_type")
+    @Expose
+    private String mediaType;
+    @SerializedName("title")
+    @Expose
+    private String title;
+    @SerializedName("popularity")
+    @Expose
+    private double popularity;
+    @SerializedName("poster_path")
+    @Expose
+    private String posterPath;
+    @SerializedName("profile_path")
+    @Expose
+    private String profilePath;
+    @SerializedName("original_language")
+    @Expose
+    private String originalLanguage;
+    @SerializedName("original_title")
+    @Expose
+    private String originalTitle;
+    @SerializedName("genre_ids")
+    @Expose
+    private List<Integer> genreIds = null;
+    @SerializedName("backdrop_path")
+    @Expose
+    private String backdropPath;
+    @SerializedName("adult")
+    @Expose
+    private boolean adult;
+    @SerializedName("overview")
+    @Expose
+    private String overview;
+    @SerializedName("release_date")
+    @Expose
+    private String releaseDate;
+    @SerializedName("original_name")
+    @Expose
+    private String originalName;
+    @SerializedName("name")
+    @Expose
+    private String name;
+    @SerializedName("first_air_date")
+    @Expose
+    private String firstAirDate;
+    @SerializedName("origin_country")
+    @Expose
+    private List<String> originCountry = null;
+    @SerializedName("known_for")
+    @Expose
+    private List<com.epam.popcornapp.pojo.actors.search.embedded.KnownFor> knownFor = null;
+
+    public float getVoteAverage() {
+        return voteAverage;
+    }
+
+    public void setVoteAverage(final float voteAverage) {
+        this.voteAverage = voteAverage;
+    }
+
+    public int getVoteCount() {
+        return voteCount;
+    }
+
+    public void setVoteCount(final int voteCount) {
+        this.voteCount = voteCount;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(final int id) {
+        this.id = id;
+    }
+
+    public boolean getVideo() {
+        return video;
+    }
+
+    public void setVideo(final boolean video) {
+        this.video = video;
+    }
+
+    public String getMediaType() {
+        return mediaType;
+    }
+
+    public void setMediaType(final String mediaType) {
+        this.mediaType = mediaType;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(final String title) {
+        this.title = title;
+    }
+
+    public double getPopularity() {
+        return popularity;
+    }
+
+    public void setPopularity(final double popularity) {
+        this.popularity = popularity;
+    }
+
+    public String getPosterPath() {
+        return posterPath;
+    }
+
+    public void setPosterPath(final String posterPath) {
+        this.posterPath = posterPath;
+    }
+
+    public String getProfilePath() {
+        return profilePath;
+    }
+
+    public void setProfilePath(final String profilePath) {
+        this.profilePath = profilePath;
+    }
+
+    public String getOriginalLanguage() {
+        return originalLanguage;
+    }
+
+    public void setOriginalLanguage(final String originalLanguage) {
+        this.originalLanguage = originalLanguage;
+    }
+
+    public String getOriginalTitle() {
+        return originalTitle;
+    }
+
+    public void setOriginalTitle(final String originalTitle) {
+        this.originalTitle = originalTitle;
+    }
+
+    public List<Integer> getGenreIds() {
+        return genreIds;
+    }
+
+    public void setGenreIds(final List<Integer> genreIds) {
+        this.genreIds = genreIds;
+    }
+
+    public String getBackdropPath() {
+        return backdropPath;
+    }
+
+    public void setBackdropPath(final String backdropPath) {
+        this.backdropPath = backdropPath;
+    }
+
+    public boolean isAdult() {
+        return adult;
+    }
+
+    public void setAdult(final boolean adult) {
+        this.adult = adult;
+    }
+
+    public String getOverview() {
+        return overview;
+    }
+
+    public void setOverview(final String overview) {
+        this.overview = overview;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(final String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public String getOriginalName() {
+        return originalName;
+    }
+
+    public void setOriginalName(final String originalName) {
+        this.originalName = originalName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public String getFirstAirDate() {
+        return firstAirDate;
+    }
+
+    public void setFirstAirDate(final String firstAirDate) {
+        this.firstAirDate = firstAirDate;
+    }
+
+    public List<String> getOriginCountry() {
+        return originCountry;
+    }
+
+    public void setOriginCountry(final List<String> originCountry) {
+        this.originCountry = originCountry;
+    }
+
+    public List<com.epam.popcornapp.pojo.actors.search.embedded.KnownFor> getKnownFor() {
+        return knownFor;
+    }
+
+    public void setKnownFor(final List<KnownFor> knownFor) {
+        this.knownFor = knownFor;
+    }
+}

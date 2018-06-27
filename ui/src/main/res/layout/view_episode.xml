@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackground">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/screen_horizontal_spacing"
+        android:layout_marginTop="@dimen/episode_item_photo_top_spacing"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1.75:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toRightOf="@id/photo_image_view"
+        style="@style/TextAppearance.Subheading.Accent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/screen_horizontal_spacing"
+        android:layout_marginEnd="@dimen/screen_horizontal_spacing"/>
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/title_text_view"
+        app:layout_constraintTop_toBottomOf="@id/title_text_view"
+        style="@style/Style.RatingBar.Indicator"/>
+
+    <TextView
+        android:id="@+id/release_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Body2.PrimarySecondary"
+        android:layout_marginEnd="@dimen/screen_horizontal_spacing"
+        app:layout_constraintTop_toTopOf="@id/rating_bar"
+        app:layout_constraintBottom_toBottomOf="@id/rating_bar"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/overview_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/episode_item_overview_top_spacing"
+        app:layout_constraintLeft_toLeftOf="@id/rating_bar"
+        app:layout_constraintRight_toRightOf="@id/release_date_text_view"
+        app:layout_constraintTop_toBottomOf="@id/rating_bar"/>
+
+</android.support.constraint.ConstraintLayout>

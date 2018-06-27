@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/txt_fake_value"
+            android:textSize="18dp"
+            android:textColor="@android:color/transparent"
+            android:layout_alignParentRight="true"/>
+        <example.com.CheckInfoTextView android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/txt_fake_info"
+            android:textSize="18dp"
+            android:textColor="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/txt_fake_value"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/txt_check_info_value"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/txt_fake_info"/>
+        <example.com.CheckInfoTextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:id="@+id/txt_check_info"
+            android:text=""
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/txt_check_info_value"/>
+    </RelativeLayout>
+</LinearLayout>

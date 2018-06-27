@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rate_profile_image_view"
+        android:layout_width="@dimen/rate_view_avatar_size"
+        android:layout_height="@dimen/rate_view_avatar_size"
+        android:layout_gravity="center"
+        android:src="@color/color_card_background" />
+
+    <TextView
+        android:id="@+id/rate_message_text_view"
+        style="@style/TextAppearance.Body2.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/rate_view_title_top_spacing" />
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/rate_rating_bar"
+        style="@style/Style.RatingBar.Base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/rate_view_rating_top_spacing"
+        android:isIndicator="true" />
+
+    <Button
+        android:id="@+id/rate_button"
+        style="@style/Style.Button.Flat.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:enabled="false"
+        android:text="@string/rate"
+        android:textColor="@color/color_text_disable" />
+
+</merge>

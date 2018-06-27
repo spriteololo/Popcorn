@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/adapter_item_main_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/activity_tv_episode_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="2:1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <include
+                layout="@layout/adapter_item_main_info_big_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/screen_horizontal_spacing"
+                android:layout_marginStart="@dimen/screen_horizontal_spacing" />
+
+            <Button
+                android:id="@+id/activity_tv_episode_show_details_button"
+                style="@style/Style.Button.Flat.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/button_vertical_spacing"
+                android:text="@string/show_details" />
+
+            <com.epam.popcornapp.ui.expandable.ExpandableLinearLayout
+                android:id="@+id/activity_tv_episode_expandable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/screen_horizontal_spacing"
+                android:layout_marginStart="@dimen/screen_horizontal_spacing"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/activity_tv_episode_director_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextAppearance.Body2.Primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/screen_vertical_spacing"
+                        android:text="@string/directed_by" />
+
+                    <TextView
+                        android:id="@+id/activity_tv_episode_director_text_view"
+                        style="@style/TextAppearance.Body2.PrimarySecondary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/screen_vertical_small_spacing" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/activity_tv_episode_screenwriter_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextAppearance.Body2.Primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/screen_vertical_spacing"
+                        android:text="@string/written_by" />
+
+                    <TextView
+                        android:id="@+id/activity_tv_episode_screenwriter_text_view"
+                        style="@style/TextAppearance.Body2.PrimarySecondary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/screen_vertical_small_spacing" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/expandable_layout_bottom_spacing" />
+
+            </com.epam.popcornapp.ui.expandable.ExpandableLinearLayout>
+
+            <com.epam.popcornapp.ui.swimming.SwimmingLineView
+                android:id="@+id/activity_tv_episode_gallery_swimming_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/swimming_line_small_vertical_spacing" />
+
+            <com.epam.popcornapp.ui.swimming.SwimmingLineView
+                android:id="@+id/activity_tv_episode_billed_cast_swimming_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/swimming_line_vertical_spacing" />
+
+            <com.epam.popcornapp.ui.rateView.RateView
+                android:id="@+id/rate_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_vertical_spacing"
+                android:visibility="gone" />
+
+            <com.epam.popcornapp.ui.switcher.PageSwitcher
+                android:id="@+id/activity_tv_episode_page_switcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/screen_vertical_spacing" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/episode_toolbar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <include layout="@layout/view_toolbar_transparent" />
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--main app margins-->
+    <dimen name="screen_horizontal_spacing">16dp</dimen>
+    <dimen name="screen_vertical_spacing">32dp</dimen>
+    <dimen name="screen_vertical_middle_spacing">16dp</dimen>
+    <dimen name="screen_vertical_small_spacing">12dp</dimen>
+    <dimen name="screen_vertical_very_small_spacing">8dp</dimen>
+
+    <!--login screen-->
+    <dimen name="account_icon_size">24dp</dimen>
+    <dimen name="account_icon_big_size">200dp</dimen>
+
+    <dimen name="login_card_view_corner_radius">2dp</dimen>
+    <dimen name="login_card_view_content_padding">6dp</dimen>
+
+    <!--main app top paddings-->
+    <dimen name="recycler_view_home_top_padding">68dp</dimen>
+    <dimen name="view_all_top_padding">80dp</dimen>
+
+    <dimen name="image_view_blur_radius">20dp</dimen>
+    <dimen name="toolbar_blur_radius">10dp</dimen>
+    <dimen name="blur_view_photo_blur_radius">20dp</dimen>
+
+    <!--margins of swimming lines-->
+    <dimen name="switcher_swimming_line_horizontal_spacing">4dp</dimen>
+
+    <!--paddings of swimming lines-->
+    <dimen name="tiles_horizontal_spacing">12dp</dimen>
+
+    <!--height without title of swimming line-->
+    <dimen name="swimming_lines_content_height">274dp</dimen>
+    <!--minimum title height of swimming lines-->
+    <dimen name="swimming_lines_header_height">40dp</dimen>
+
+    <!--Bottom margin in main screen and actor details screen-->
+    <dimen name="swimming_lines_bottom_spacing">20dp</dimen>
+
+    <!--actor credits margins-->
+    <dimen name="actor_credits_section_vertical_spacing">16dp</dimen>
+    <dimen name="actor_credits_role_vertical_spacing">12dp</dimen>
+    <dimen name="actor_credits_film_horizontal_spacing">16dp</dimen>
+
+    <!--Reviews spacings-->
+    <dimen name="review_item_bottom_spacing">8dp</dimen>
+    <dimen name="review_item_top_spacing">4dp</dimen>
+
+    <!--Episode spacing -->
+    <dimen name="episode_item_top_spacing">4dp</dimen>
+    <dimen name="episode_item_photo_top_spacing">9dp</dimen>
+    <dimen name="episode_item_overview_top_spacing">8dp</dimen>
+
+    <!--Current reviews spacings-->
+    <dimen name="current_review_item_horizontal_spacing">16dp</dimen>
+    <dimen name="review_header_vertical_spacing">20dp</dimen>
+
+    <!--Seasons spacing-->
+    <dimen name="adapter_season_vertical_spacing">12dp</dimen>
+
+    <!--Release dates spacings-->
+    <dimen name="release_dates_flag_size">24dp</dimen>
+    <dimen name="release_dates_first_column_horizontal_spacing">40dp</dimen>
+    <dimen name="release_dates_second_column_horizontal_spacing">56dp</dimen>
+
+    <!--More screen spacings-->
+    <dimen name="more_screen_tile_items_bottom_spacing">16dp</dimen>
+    <dimen name="more_screen_tile_items_horizontal_spacing">8dp</dimen>
+
+    <!--Swimming line spacings-->
+    <dimen name="swimming_line_vertical_spacing">20dp</dimen>
+    <dimen name="swimming_line_small_vertical_spacing">4dp</dimen>
+
+    <!--Button spacings-->
+    <dimen name="button_vertical_spacing">6dp</dimen>
+
+    <!--Expandable layout spacings-->
+    <dimen name="expandable_layout_bottom_spacing">16dp</dimen>
+
+    <!--Expandable Text View spacings-->
+    <dimen name="expandable_text_view_top_spacing">20dp</dimen>
+
+    <!--Text View spacings-->
+    <dimen name="text_view_top_spacing">4dp</dimen>
+    <dimen name="text_view_height">16dp</dimen>
+
+    <!--Current Season View spacings-->
+    <dimen name="current_season_view_top_spacing">16dp</dimen>
+
+    <dimen name="login_screen_button_vertical_spacing">16dp</dimen>
+
+    <!--Rate View spacings-->
+    <dimen name="rate_view_avatar_size">72dp</dimen>
+    <dimen name="rate_view_title_top_spacing">8dp</dimen>
+    <dimen name="rate_view_rating_top_spacing">12dp</dimen>
+
+    <!--Floating Action Button spacing-->
+    <dimen name="fab_spacing">10dp</dimen>
+
+    <!--Lists activity-->
+    <dimen name="lists_activity_top_spacing">8dp</dimen>
+
+    <!--Lists fragment-->
+    <dimen name="lists_fragment_horizontal_spacing">8dp</dimen>
+
+    <!--Create List dialog-->
+    <dimen name="create_list_dialog_spacing">8dp</dimen>
+
+    <!--List tile spacing-->
+    <dimen name="tile_vertical_spacing">8dp</dimen>
+    <dimen name="tile_small_vertical_spacing">4dp</dimen>
+
+    <!--List image tile spacing-->
+    <dimen name="tile_item_horizontal_spacing">16dp</dimen>
+    <dimen name="tile_item_vertical_spacing">24dp</dimen>
+    <dimen name="tile_item_small_horizontal_spacing">8dp</dimen>
+    <dimen name="tile_item_small_vertical_spacing">12dp</dimen>
+
+    <!--Small image tile size-->
+    <dimen name="small_image_tile_width">40dp</dimen>
+    <dimen name="small_image_tile_height">60dp</dimen>
+
+    <!--Title card details info spacing-->
+    <dimen name="title_card_budget_end_spacing">88dp</dimen>
+    <dimen name="title_card_release_info_vertical_spacing">8dp</dimen>
+
+</resources>

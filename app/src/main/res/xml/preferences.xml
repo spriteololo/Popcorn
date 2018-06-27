@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="category_image_size"
+        android:title="@string/category_images">
+
+        <ListPreference
+            android:defaultValue="@string/default_value"
+            android:dialogTitle="@string/backdrop_size"
+            android:key="@string/backdrop_size"
+            android:title="@string/backdrop_size" />
+
+        <ListPreference
+            android:defaultValue="@string/default_value"
+            android:dialogTitle="@string/logo_size"
+            android:key="@string/logo_size"
+            android:title="@string/logo_size" />
+
+        <ListPreference
+            android:defaultValue="@string/default_value"
+            android:dialogTitle="@string/poster_size"
+            android:key="@string/poster_size"
+            android:title="@string/poster_size" />
+
+        <ListPreference
+            android:defaultValue="@string/default_value"
+            android:dialogTitle="@string/profile_size"
+            android:key="@string/profile_size"
+            android:title="@string/profile_size" />
+
+        <ListPreference
+            android:defaultValue="@string/default_value"
+            android:dialogTitle="@string/still_size"
+            android:key="@string/still_size"
+            android:title="@string/still_size" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

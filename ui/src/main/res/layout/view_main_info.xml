@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/view_main_info_main_text_view"
+        style="@style/TextAppearance.Body1.Primary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/view_main_info_rating_text_view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/view_main_info_view_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/view_main_info_main_text_view">
+
+        <TextView
+            android:id="@+id/view_main_info_left_text_view"
+            style="@style/TextAppearance.Body1.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/view_main_info_divider_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="|"
+            android:textColor="@color/color_divider"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/view_main_info_right_text_view"
+            style="@style/TextAppearance.Body1.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/view_main_info_rating_text_view"
+        style="@style/TextAppearance.Display0.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/view_main_info_star_view"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/view_main_info_vote_count_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/view_main_info_rating_text_view"
+        app:srcCompat="@drawable/icon_information_view_star" />
+
+    <TextView
+        android:id="@+id/view_main_info_vote_count_text_view"
+        style="@style/TextAppearance.Caption.PrimarySecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_main_info_rating_text_view" />
+
+    <at.blogc.android.views.ExpandableTextView
+        android:id="@+id/view_main_info_overview_text_view"
+        style="@style/TextAppearance.Body1.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/expandable_text_view_top_spacing"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:animation_duration="500"
+        app:layout_constraintTop_toBottomOf="@+id/view_main_info_view_linear_layout" />
+
+</merge>

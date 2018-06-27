@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/screen_vertical_small_spacing"
+    android:foreground="?attr/selectableItemBackground">
+
+    <include
+        android:id="@+id/list_image"
+        layout="@layout/view_list_small_image_title"
+        android:layout_width="@dimen/small_image_tile_width"
+        android:layout_height="@dimen/small_image_tile_height" />
+
+    <TextView
+        android:id="@+id/list_name_text_view"
+        style="@style/TextAppearance.Subheading.Accent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_vertical_small_spacing"
+        android:layout_marginTop="@dimen/text_view_top_spacing"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/list_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list_item_count_text_view"
+        style="@style/TextAppearance.Body2.PrimarySecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_vertical_small_spacing"
+        android:layout_marginTop="@dimen/text_view_top_spacing"
+        app:layout_constraintStart_toEndOf="@+id/list_image"
+        app:layout_constraintTop_toBottomOf="@+id/list_name_text_view" />
+
+</android.support.constraint.ConstraintLayout>
+
+

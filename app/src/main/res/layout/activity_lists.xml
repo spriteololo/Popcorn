@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lists_activity_message_text_view"
+        style="@style/TextAppearance.Body1.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_lists_error"
+        android:visibility="invisible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lists_activity_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/screen_vertical_middle_spacing"
+        android:paddingEnd="@dimen/screen_vertical_middle_spacing"
+        android:paddingStart="@dimen/screen_vertical_middle_spacing"
+        android:paddingTop="@dimen/view_all_top_padding" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/lists_activity_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_spacing"
+        android:layout_marginEnd="@dimen/fab_spacing"
+        android:tint="@color/white"
+        app:backgroundTint="@color/color_accent"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/icon_plus" />
+
+    <include layout="@layout/view_toolbar_blur" />
+
+</android.support.design.widget.CoordinatorLayout>

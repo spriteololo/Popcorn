@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/actor_credits_role_vertical_spacing"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/adapter_item_actor_role_year_text_view"
+        style="@style/TextAppearance.Subheading.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/actor_credits_film_horizontal_spacing"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/adapter_item_actor_role_title_text_view"
+            style="@style/TextAppearance.Subheading.Accent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acting" />
+
+        <TextView
+            android:id="@+id/adapter_item_actor_role_role_text_view"
+            style="@style/TextAppearance.Caption.PrimarySecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/role" />
+
+    </LinearLayout>
+
+</LinearLayout>

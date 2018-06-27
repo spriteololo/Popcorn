@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_header_linear_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_submenu_background"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/navigation_header_image"
+        android:layout_width="@dimen/account_icon_size"
+        android:layout_height="@dimen/account_icon_size"
+        android:layout_marginBottom="@dimen/screen_vertical_small_spacing"
+        android:layout_marginEnd="@dimen/screen_horizontal_spacing"
+        android:layout_marginStart="@dimen/screen_horizontal_spacing"
+        android:layout_marginTop="@dimen/screen_vertical_small_spacing"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/avatarTransition" />
+
+    <TextView
+        android:id="@+id/navigation_header_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/screen_vertical_middle_spacing"
+        android:paddingEnd="@dimen/screen_horizontal_spacing"
+        android:paddingStart="@dimen/screen_horizontal_spacing"
+        android:paddingTop="@dimen/screen_vertical_middle_spacing"
+        android:textAppearance="@style/TextAppearance.Body2.Base"
+        android:textColor="@color/selector_home_navigation_view_text"
+        android:transitionName="@string/usernameTransition" />
+
+</LinearLayout>

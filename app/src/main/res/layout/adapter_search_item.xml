@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/screen_horizontal_spacing"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="2:3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/search_title_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiles_horizontal_spacing"
+        android:layout_marginEnd="@dimen/tiles_horizontal_spacing"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.Subheading.Primary"
+        app:layout_constraintLeft_toRightOf="@id/photo_image_view"
+        app:layout_constraintRight_toLeftOf="@id/search_type_text_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/search_description_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Body1.PrimarySecondary"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="@id/search_type_text_view"
+        app:layout_constraintLeft_toLeftOf="@+id/search_title_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/search_title_text_view" />
+
+    <TextView
+        android:id="@+id/search_type_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/screen_horizontal_spacing"
+        android:background="@drawable/background_type_search_item"
+        android:includeFontPadding="false"
+        android:padding="4dp"
+        android:textAppearance="@style/TextAppearance.Caption.Primary"
+        app:layout_constraintBottom_toBottomOf="@+id/search_title_text_view"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

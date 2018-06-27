@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_item_tile_view_switcher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/more_screen_tile_items_horizontal_spacing"
+    android:layout_marginEnd="@dimen/more_screen_tile_items_horizontal_spacing"
+    android:layout_marginBottom="@dimen/more_screen_tile_items_bottom_spacing"
+    android:foreground="?attr/selectableItemBackground">
+
+    <com.epam.popcornapp.ui.skeleton.SkeletonDescriptionTileView
+        android:id="@+id/adapter_item_description_tile_skeleton_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.epam.popcornapp.ui.tiles.RatingTile
+        android:id="@+id/adapter_item_rating_tile_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</ViewSwitcher>

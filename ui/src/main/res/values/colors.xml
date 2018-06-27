@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">@color/black</color>
+    <color name="color_primary_dark">@color/black</color>
+    <color name="color_accent">@color/teal_300</color>
+    <color name="color_primary_inverse">@color/white</color>
+
+    <color name="color_transparent">@color/transparent</color>
+
+    <color name="color_background">@color/black</color>
+    <color name="color_submenu_background">@color/grey_900</color>
+    <color name="color_drawer_background">@color/grey_20</color>
+    <color name="color_card_background">@color/grey_light_opacity_20</color>
+    <color name="color_gallery_background">@color/black_opacity_50</color>
+
+    <color name="color_divider">@color/white_opacity_50</color>
+
+    <color name="color_icon">@color/white</color>
+    <color name="color_icon_opacity_70">@color/white_opacity_70</color>
+    <color name="color_icon_opacity_10">@color/white_opacity_10</color>
+
+    <color name="color_blur_overlay">@color/black_opacity_50</color>
+
+    <color name="color_text_primary">@color/white</color>
+    <color name="color_text_primary_secondary">@color/white_opacity_70</color>
+    <color name="color_text_accent">@color/teal_300</color>
+    <color name="color_text_disable">@color/white_opacity_50</color>
+
+    <color name="color_rating_bar_indicator_progress">@color/white</color>
+    <color name="color_rating_bar_indicator_secondary_progress">@color/white</color>
+    <color name="color_rating_bar_indicator_background">@color/white</color>
+
+    <color name="color_rating_bar_base_progress">@color/color_accent</color>
+    <color name="color_rating_bar_base_secondary_progress">@color/color_accent</color>
+    <color name="color_rating_bar_base_background">@color/white_opacity_50</color>
+
+    <color name="color_list_tile_background">@color/opaque_grey</color>
+    <color name="color_list_tile_icon">@color/opaque_grey_lite</color>
+
+    <!-- Base colors -->
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_opacity_70">#B3FFFFFF</color>
+    <color name="white_opacity_50">#80FFFFFF</color>
+    <color name="white_opacity_12">#1FFFFFFF</color>
+    <color name="white_opacity_10">#19ffffff</color>
+
+    <color name="opaque_grey">#2b2b2b</color>
+    <color name="opaque_grey_lite">#3f3f3f</color>
+
+    <color name="black">#000000</color>
+    <color name="black_opacity_50">#80000000</color>
+
+    <color name="grey_20">#333333</color>
+    <color name="grey_900">#212121</color>
+
+    <color name="grey_light">#d8d8d8</color>
+    <color name="grey_light_opacity_20">#33d8d8d8</color>
+
+    <color name="teal_300">#4db6ac</color>
+</resources>

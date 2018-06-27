@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        renderscriptTargetApi versions.targetApi
+        renderscriptSupportModeEnabled true
+
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile project(':ui')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile libraries.circularReveal
+
+    //Glide lib
+    compile libraries.glide
+    annotationProcessor libraries.glideCompiler
+
+    //Retrofit2 lib
+    compile libraries.retrofit
+    compile libraries.retrofitGsonConverter
+    compile libraries.retrofitAdapter
+
+    //rxJava/Android
+    compile libraries.rxJava
+    compile libraries.rxAndroid
+
+    compile libraries.realTimeBlur
+
+    compile libraries.scrollingImageView
+}

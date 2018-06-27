@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_current_review_switcher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:measureAllChildren="false">
+
+    <com.epam.popcornapp.ui.skeleton.SkeletonReviewItem
+        android:id="@+id/adapter_review_item_skeleton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.epam.popcornapp.ui.review.CurrentReviewView
+        android:id="@+id/adapter_current_review_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</ViewSwitcher>

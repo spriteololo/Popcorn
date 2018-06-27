@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/current_review_item_horizontal_spacing"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextAppearance.Body2.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/screen_horizontal_spacing"
+            android:gravity="center_vertical"
+            android:text="@string/reviews" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/review_more_button"
+            style="@style/Style.Button.More"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/more" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view_movie_review_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/current_review_item_horizontal_spacing"
+        android:layout_marginStart="@dimen/current_review_item_horizontal_spacing"
+        android:layout_marginTop="@dimen/screen_vertical_small_spacing" />
+
+</merge>
